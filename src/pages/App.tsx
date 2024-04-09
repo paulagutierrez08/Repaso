@@ -1,8 +1,8 @@
 import React from 'react';
-import Title from './organisms/title';
-import Antiguo from './organisms/classes-antiguo';
-import CIButton from './organisms/ci-button';
-import Counter from './organisms/counter';
+import Title from '../organisms/title';
+import Antiguo from '../organisms/classes-antiguo';
+import CIButton from '../organisms/ci-button';
+import Counter from '../organisms/counter';
 
 function App() {
   return (
