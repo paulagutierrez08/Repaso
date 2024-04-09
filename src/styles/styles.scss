@@ -1,0 +1,12 @@
+$primary-color: #3498db;
+$primary-font: 'Courier New';
+
+.myProject {
+    padding: 20px;
+    font-size: 10px;
+
+    .button {
+        background-color: $primary-color;
+        margin: 2px;
+    }
+}
