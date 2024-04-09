@@ -1,11 +1,22 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-function Counter (){
-const [count, setCount]= React.useState<number>(0)
+import "../styles/styles.scss"
+
+interface ButtonProps {
+    title: string;
+    counter: number;
+    increment: string;
+    decrement: string;
+}
+
+function Counter ({title, counter, increment, decrement}:ButtonProps){
+const [count, setCount]= React.useState<number>(counter)
 
 function decrementCount(){
-    setCount(count-1)
+    if(count>0){
+        setCount(count-1)
+    }
 }
 
 function incrementCount(){
@@ -15,9 +26,9 @@ function incrementCount(){
     return(
         <div>
         <h1>Typescript</h1>
-        <h3>Counter {count}</h3>
-        <Button onClick={incrementCount}>Increment</Button>
-        <Button onClick={decrementCount}>Decrement</Button>
+        <h3>{title} <span>{count}</span></h3>
+        <Button onClick={incrementCount} className="increment">{increment}</Button>
+        <Button onClick={decrementCount} className="decrement">{decrement}</Button>
         </div>
     )
 }

@@ -10,7 +10,7 @@ function App() {
       <Title/>
       <Antiguo/>
       <CIButton onClick={()=>{}} variant="contained" color="sucess">Click me</CIButton>
-      <Counter/>
+      <Counter title='Counter' counter={0} increment='Increment' decrement='Decrement'/>
     </div>
   );
 }
