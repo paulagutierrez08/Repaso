@@ -4,6 +4,7 @@ import Antiguo from '../organisms/classes-antiguo';
 import CIButton from '../organisms/ci-button';
 import Counter from '../organisms/counter';
 import Regex from '../organisms/regex';
+import RouterApp from '../router/router';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <CIButton onClick={()=>{}} variant="contained" color="sucess">Click me</CIButton>
       <Counter title='Counter' counter={0} increment='Increment' decrement='Decrement'/>
       <Regex/>
+      <RouterApp/>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 function Regex (){
 const [email, setEmail]= useState('')
 const [error, setError]= useState('')
@@ -13,7 +14,7 @@ const handleChange = (event) => {
 
 // Ejemplo de correo electronico: participacion.ciudadana@ecopetrol.com.co 
 // /^([a-z\d\.-_]+)@([a-z\d-]+)\.([a-z]{2,})(\.[a-z]{2,8})?$/i
-const emailRegex= /([a-zA-Z\d\.-_]+)@([a-z\d-]+)\.([a-z]{2,})(\.[a-z]{2,8})?$/
+const emailRegex= /([a-zA-Z\d.-_]+)@([a-z\d-]+)\.([a-z]{2,})(\.[a-z]{2,8})?$/
 
 if (!emailRegex.test(email)) {
     setError('Dirección de correo electrónico no válida');

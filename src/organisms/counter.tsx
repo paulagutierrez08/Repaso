@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 
+
 import "../styles/styles.scss"
 
 interface ButtonProps {
@@ -25,10 +26,10 @@ function incrementCount(){
 
     return(
         <div>
-        <h1>Typescript</h1>
-        <h3>{title} <span>{count}</span></h3>
-        <Button onClick={incrementCount} className="increment">{increment}</Button>
-        <Button onClick={decrementCount} className="decrement">{decrement}</Button>
+            <h1>Typescript</h1>
+            <h3>{title} <span>{count}</span></h3>
+            <Button onClick={incrementCount} className="increment">{increment}</Button>
+            <Button onClick={decrementCount} className="decrement">{decrement}</Button>
         </div>
     )
 }
